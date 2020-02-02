@@ -35,4 +35,8 @@ def convert_numeral(num):
 			# print('the roman numeral is', ans)
 	return ans;
 
-
+def main(num):
+	print(convert_numeral(num))
+	
+if __name__ == '__main__':
+    main()
