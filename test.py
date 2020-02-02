@@ -1,4 +1,4 @@
-import convert_numeral from Conversion.py
+import convert_numeral from Converter.py
 
 def test_answer():
 	convert_numeral(2150)
