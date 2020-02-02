@@ -1,7 +1,7 @@
 from Converter.py import convert_numeral 
 import pytest
 
-def test_answer():
+def first_test():
 	#convert_numeral(2150)
 	assert convert_numeral(2150) == "MMCL"
 	#convert_numeral(10123)
