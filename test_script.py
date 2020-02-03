@@ -10,3 +10,5 @@ def main():
 	#convert_numeral(10123)
 	#convert_numeral(-1023)
 	#convert_numeral(1.2)
+if __name__ == '__main__':
+    main()
