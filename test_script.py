@@ -1,4 +1,4 @@
-from Converter.py import convert_numeral 
+from Converter import convert_numeral 
 import pytest
 
 #don't know why the pytest is showing up as no tests run
