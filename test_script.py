@@ -6,7 +6,7 @@ import pytest
 def test_values():
 	#convert_numeral(2150)
 	assert convert_numeral(2150) == "MMCL"
-	#convert_numeral(10123)
-	#convert_numeral(-1023)
-	#convert_numeral(1.2)
+	assert convert_numeral(10123)
+	assert convert_numeral(-1023)
+	assert convert_numeral(1.2)
 
