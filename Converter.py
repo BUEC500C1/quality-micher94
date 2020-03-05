@@ -12,6 +12,10 @@ def convert_numeral(num):
 	for charac in teststr:
 		if charac == '.' or charac == '-':
 			return False
+		#https://www.programiz.com/python-programming/methods/string/isalpha
+		if isalpha(charac) == True:
+			return False
+		
 
 	j=0
 	remainder=100
