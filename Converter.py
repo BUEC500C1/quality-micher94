@@ -13,7 +13,7 @@ def convert_numeral(num):
 		if charac == '.' or charac == '-':
 			return False
 		#https://www.programiz.com/python-programming/methods/string/isalpha
-		if isalpha(charac) == True:
+		if charac.isalpha() == True:
 			return False
 		
 
