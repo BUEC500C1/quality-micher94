@@ -11,7 +11,7 @@ def convert_numeral(num):
 	teststr = str(num)
 	for charac in teststr:
 		if charac == '.' or charac == '-':
-			return 0
+			return False
 
 	j=0
 	remainder=100
