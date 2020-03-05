@@ -8,6 +8,7 @@ def convert_numeral(num):
 	romans=[1000,500,100,50,10,5,1]
 	letters=['M','D','C','L','X','V','I']
 
+	# Tests for inputs that will cause an error: negative numbers, strings, or floating point
 	teststr = str(num)
 	for charac in teststr:
 		if charac == '.' or charac == '-':
@@ -16,27 +17,19 @@ def convert_numeral(num):
 		if charac.isalpha() == True:
 			return False
 		
-
+	# Calculates the roman numeral
 	j=0
 	remainder=100
 	ans = ''
 	while remainder>1 and num>0:
-		# print('j is', j)
-		# print('numeral is', romans[j])
 		rem = num/romans[j]
-		# print('dividend is', rem)
 		if rem<1:
-			# print('not me')
 			j=j+1
 		else:
 			remainder=rem
-			# print('remainder is', rem)
-			# print('og number is', num)
 			num = num-(romans[j]*math.floor(rem))
 			for i in range(0,math.floor(rem)):
 				ans = ans + letters[j]
-			# print('the new number is', num)
-			# print('the roman numeral is', ans)
 	return ans;
 
 
