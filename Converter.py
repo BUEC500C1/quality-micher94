@@ -5,8 +5,8 @@
 import math
 
 def convert_numeral(num):
-	romans=[1000,500,100,50,10,5,4,1]
-	letters=['M','D','C','L','X','V','IV','I']
+	romans=[1000,500,100,50,10,9,5,4,1]
+	letters=['M','D','C','L','X','IX','V','IV','I']
 
 	# Tests for inputs that will cause an error: negative numbers, strings, or floating point
 	teststr = str(num)
