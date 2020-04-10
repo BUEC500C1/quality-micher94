@@ -13,3 +13,4 @@ def test_values():
 	assert convert_numeral(1.2) == False
 	assert convert_numeral('word') == False
 
+
