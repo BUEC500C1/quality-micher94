@@ -11,7 +11,7 @@ def convert_numeral(num):
 	# Tests for inputs that will cause an error: negative numbers, strings, or floating point
 	teststr = str(num)
 	for charac in teststr:
-		if charac == '.' or charac == '-':
+		if isinstance(charac, str):
 			return False
 		#https://www.programiz.com/python-programming/methods/string/isalpha
 		if charac.isalpha() == True:
